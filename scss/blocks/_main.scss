@@ -1,0 +1,363 @@
+main {
+  .hero {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(10px, 3.02vw, 42px);
+    @media (max-width: 724px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-left {
+      p {
+        font-size: clamp(20px, 4.11vw, 56px);
+        line-height: clamp(30px, 4.52vw, 61.6px);
+        max-width: 658px;
+      }
+    }
+    .hero-right {
+      max-width: 700px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  #product {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+    .product-left {
+      z-index: 2;
+      position: relative;
+      left: 20px;
+      max-width: 500px;
+      img {
+        width: 100%;
+      }
+    }
+    .product-right {
+      position: relative;
+      padding: clamp(25px, 3.67vw, 50px);
+      z-index: 1;
+      border: 1px solid rgba(37, 41, 48, 1);
+      h3 {
+        font-size: clamp(10px, 1.39vw, 19px);
+        line-height: clamp(13px, 1.99vw, 27.14px);
+      }
+      h1 {
+        font-size: clamp(18px, 2.64vw, 36px);
+        line-height: clamp(20px, 2.91vw, 39.6px);
+        padding-top: 4px;
+      }
+      ul {
+        padding-top: 20px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          .circle {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 95, 0, 1);
+            border-radius: 50%;
+          }
+        }
+      }
+      button {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding-bottom: 11px;
+        color: rgba(37, 41, 48, 1);
+        border-bottom: 2px solid rgba(255, 95, 0, 1);
+      }
+    }
+  }
+  #solutions {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .solution-info {
+      display: flex;
+      align-items: center;
+      width: 1400px;
+      justify-content: space-between;
+      button {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding-bottom: 11px;
+        color: rgba(37, 41, 48, 1);
+        border-bottom: 2px solid rgba(255, 95, 0, 1);
+      }
+      h2 {
+        // padding-left: clamp(10px,12.5vw,170px);
+        line-height: clamp(13px, 1.94vw, 26.4px);
+      }
+      h1 {
+        // padding-left: clamp(10px,12.5vw,170px);
+        padding-bottom: clamp(40px, 5.88vw, 80px);
+        font-size: clamp(18px, 2.64vw, 36px);
+        padding-top: 18px;
+        color: rgba(37, 41, 48, 0.8);
+      }
+    }
+    .solutins-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      @media (max-width: 1350px) {
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .solution-card {
+        max-width: 453px;
+        position: relative;
+        .block {
+          background-color: rgba(232, 233, 234, 1);
+          padding: 6px;
+          font-size: 12px;
+          position: absolute;
+          top: -15px;
+          right: 40px;
+          // bottom: 645px;
+          // left: 230px;
+          @media (max-width: 440px) {
+            right: 10px;
+          }
+        }
+        .start {
+          width: 171px;
+        }
+        .middle {
+          width: 101px;
+          @media (max-width: 440px) {
+            right: 10px;
+          }
+        }
+        .end {
+          width: 160px;
+        }
+        .solution-card-top {
+          background-color: #f87200;
+          .solution-card-img {
+            max-width: 453px;
+            img {
+              width: 100%;
+            }
+          }
+          p {
+            padding-top: 13px;
+            padding-left: clamp(12px, 1.76vw, 24px);
+            font-size: clamp(18px, 2.64vw, 36px);
+            line-height: clamp(20px, 2.91vw, 39.6px);
+            color: rgba(37, 41, 48, 1);
+          }
+        }
+        .solution-card-bottom {
+          padding-top: clamp(15px, 2.2vw, 30px);
+          p {
+            color: rgba(248, 114, 0, 1);
+          }
+          button {
+            padding-top: 25px;
+          }
+        }
+      }
+    }
+  }
+  .solution-why {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .solution-why-left {
+      max-width: 467px;
+      button {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 16px;
+        border-bottom: 2px solid rgba(255, 95, 0, 1);
+        gap: 6px;
+        padding-bottom: 11px;
+        color: rgba(37, 41, 48, 1);
+      }
+      h1 {
+        font-size: clamp(18px, 2.64vw, 36px);
+        line-height: clamp(20px, 2.91vw, 39.6px);
+        font-weight: 400;
+        color: rgba(37, 41, 48, 1);
+      }
+    }
+    .solution__why-right {
+      display: flex;
+      justify-content: center;
+      gap: clamp(10px, 2.94vw, 40px);
+      padding: clamp(20px, 5.88vw, 80px);
+      background-color: rgba(232, 233, 234, 1);
+      @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+  #collab {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+    .collab-left {
+      max-width: 563px;
+      img {
+        width: 100%;
+      }
+    }
+    .collab-right {
+      height: 295px;
+      padding: clamp(10px, 4.41vw, 60px);
+      border: 1px solid rgba(37, 41, 48, 1);
+      @media (max-width: 900px) {
+        height: 200px;
+      }
+
+      button {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 16px;
+        border-bottom: 2px solid rgba(255, 95, 0, 1);
+        gap: 6px;
+        padding-bottom: 11px;
+        color: rgba(37, 41, 48, 1);
+      }
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        max-width: 399px;
+      }
+    }
+  }
+  #products {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(248, 114, 0, 1);
+    @media (max-width: 800px) {
+      flex-wrap: wrap-reverse;
+      gap: 20px;
+    }
+    .products-left {
+      button {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 16px;
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
+        gap: 6px;
+        padding-bottom: 11px;
+        color: rgba(37, 41, 48, 1);
+      }
+      h1 {
+        margin-bottom: clamp(10px, 4.41vw, 60px);
+        max-width: 340px;
+        font-size: clamp(18px, 2.64vw, 36px);
+        line-height: 39.6px;
+      }
+    }
+    .products-right {
+      max-width: 913px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  #documentation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .documentation-left {
+      display: flex;
+      align-items: center;
+      gap: clamp(20px, 14.7vw, 200px);
+      justify-content: space-around;
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .document-start {
+        h1 {
+          font-size: clamp(18px, 2.64vw, 36px);
+          padding-bottom: clamp(10px, 2.2vw, 30px);
+          line-height: clamp(20px, 2.91vw, 39.6px);
+        }
+        ul {
+          li {
+            font-size: 15px;
+            line-height: 23.2px;
+          }
+        }
+      }
+    }
+  }
+  .documentation-right {
+    padding-right: clamp(20px, 14.7vw, 200px);
+    padding-left: clamp(10px, 2.35vw, 32px);
+    background-color: #f87200;
+    h1 {
+      padding-bottom: clamp(17px, 2.5vw, 34px);
+    }
+    .doc-img {
+      max-width: 240px;
+      img {
+        width: 100%;
+      }
+    }
+    button {
+      margin-top: 20px;
+      display: flex;
+      margin-bottom: 30px;
+      align-items: center;
+      font-size: 16px;
+      line-height: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 1);
+      gap: 6px;
+      padding-bottom: 11px;
+      color: rgba(37, 41, 48, 1);
+    }
+  }
+}
+

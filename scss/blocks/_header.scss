@@ -1,0 +1,65 @@
+header {
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    @media (max-width: 550px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    @media (max-width: 300px) {
+      .links {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+    .links {
+      button {
+        font-weight: 400;
+        font-size: clamp(10px, 1.02vw, 14px);
+        line-height: clamp(10px, 1.49vw, 20.3px);
+      }
+      display: flex;
+      gap: clamp(10px, 4.63vw, 63px);
+    }
+    .language {
+      button {
+        color: rgba(37, 41, 48, 0.4);
+        font-weight: 400;
+        font-size: 11px;
+        line-height: clamp(10px, 1.19vw, 16.24px);
+        cursor: pointer;
+      }
+    }
+  }
+  .header-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    @media (max-width: 550px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .links {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      gap: clamp(10px, 5.29vw, 72px);
+    }
+    button {
+      border: 1px solid rgba(37, 41, 48, 1);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: clamp(10px, 1.54vw, 21px);
+      padding-right: clamp(10px, 1.54vw, 21px);
+    }
+  }
+}
